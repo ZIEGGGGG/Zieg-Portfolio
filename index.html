@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+<!-- Add AOS library -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <title>ZIEG PORTFOLIO</title>
+    <!-- Navogation Bar section -->
+    <nav class="font-bold text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="https://www.linkedin.com/in/zieg-fred-jepollo-1026081b8/">
+            <div class="ml-4">
+                <img src="image/logo1.png" alt="" class="h-20 w-20 text-white text-lg lg:text-xl font-semibold">
+            </div>
+        </a>
+            <ul class="hidden sm:flex space-x-7">
+                <li><a href="index.html" class="text-red-500 hover:text-red-600">Home</a></li>
+                <li><a href="index.html#about" class="text-white hover:text-red-600">About</a></li>
+                <li><a href="#" class="text-white hover:text-red-600">Services</a></li>
+                <li><a href="#" class="text-white hover:text-red-600">Portfolio</a></li>
+                <li><a href="#" class="text-white hover:text-red-600">Contact</a></li>
+            </ul>
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="sm:hidden text-white hover:text-red-600 focus:outline-none">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden sm:hidden">
+            <ul class="px-2 pt-2 pb-3 space-y-1">
+                <li><a href="#" class="block text-white hover:text-red-600">Home</a></li>
+                <li><a href="#" class="block text-white hover:text-red-600">About</a></li>
+                <li><a href="#" class="block text-white hover:text-red-600">Services</a></li>
+                <li><a href="#" class="block text-white hover:text-red-600">Portfolio</a></li>
+                <li><a href="#" class="block text-white hover:text-red-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+<body class="bg-black">
+   
+      <!-- Container for thenpx tailwindcss -i ./src/input.css -o ./src/output.css --watch background image -->
+    <header class="relative overflow-hidden  bg-cover bg-center h-screen flex items-center justify-end px-4 lg:px-110"
+    style="background-image: url('image/landingpage_mobile.png');" data-aos="fade-up">
+ 
+    <div class=" bg-fixed  bg-no-repeat hidden lg:block absolute inset-0 bg-cover bg-center" style="background-image: url('image/landingpage_desktop.png'); "></div>
+    
+    
+          
+    
+    <!-- Container for the landing page -->
+    <div class="container mx-auto text-center lg:text-left">
+        <div class="mx-auto lg:ml-28">
+            <h1 class="text-white text-xl lg:text-2xl font-semibold mb-4">UI/UX DESIGNER</h1>
+            <h1 class="text-white text-3xl lg:text-5xl font-bold mb-4">
+                HI, I AM <span class="text-red-600">ZIEG</span>
+            </h1>
+            <h1 class="text-white text-3xl lg:text-5xl font-bold mb-4">FROM PHILIPPINES</h1>
+        </div>
+    </div>
+    </header>
+
+    <section id="about">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-start mt-8 text-white" data-aos="fade-up">
+        <!-- Left container for About Me content and Tabs -->
+        <div class="w-full lg:w-3/4 lg:pr-16 lg:max-w-3xl xl:max-w-4xl shadow-white"> <!-- Adjust width classes -->
+            <!-- About Me Content -->
+            <div class="mb-8 mx-11 lg:mb-12"> <!-- Responsive margin for the about me section -->
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">About Me</h2>
+                <p class="text-lg lg:text-xl text-white leading-relaxed">
+                    Zieg is a college student and a freelance graphic designer such as website design, User Experience (UX) Design, Logo Design, Brand Design, layout design, image editing, and Beginner software and website developer. He is currently taking up Bachelor of Science in Information Technology as a course for college and currently taking an internship (remote) in United Internship Program Under Management team as a Team Leader for work experience in building his portfolio and resume.
+                </p>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="flex flex-wrap font-bold mb-4 mx-11 lg:mb-8 gap-4"> <!-- Responsive margin for the tabs -->
+                <button class="tab-btn  active" data-target="tab1">SKILLS</button>
+                <button class="tab-btn" data-target="tab2">EXPERIENCE</button>
+                <button class="tab-btn" data-target="tab3">EDUCATION</button>
+            </div>
+    
+            <!-- Tab Content -->
+            <div class="tab-content active mx-11" id="tab1">
+                <p class="text-red-600 font-bold">UI/UX</p>
+                <p class="text-white">WEB DESIGNING/ ITERFACE DESIGNING</p>
+                <p class="text-red-600 font-bold">WEB DEVELOPMENT</p>
+                <p class="text-white">WEBSITE DEVELOPING FOR BUSINESS</p>
+                <p class="text-red-600 font-bold">GRAPHICS DESIGN</p>
+                <p class="text-white">T SHIRT DESIGNIN,LOGO DESIGNING ,DIGITAL PORTRAIT</p>
+            </div>
+            <div class="tab-content" id="tab2">
+                <p>Integer euismod sagittis ipsum, vel luctus sapien ultrices id. Aliquam tincidunt libero vitae dui tempor, nec aliquet odio vulputate.</p>
+            </div>
+            <div class="tab-content" id="tab3">
+                <p>Curabitur vitae varius mauris. Vestibulum sed sem euismod, faucibus libero et, varius urna. Donec ac quam ut nisi posuere rhoncus.</p>
+            </div>
+        </div>
+    
+        <!-- Right container for image -->
+        <div class="w-full lg:w-1/4 mt-6 lg:mt-0 lg:max-w-md xl:max-w-lg shadow-white" data-aos="fade-left"> <!-- Adjust width classes -->
+            <img class="w-full h-auto object-cover rounded-lg" src="image/aboutme.jpg" alt="About Me Image">
+        </div> 
+    </div>
+</section>
+        
+        
+    
+    <script>
+        // Get all tab buttons
+        const tabButtons = document.querySelectorAll('.tab-btn');
+    
+        // Get all tab contents
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        // Add event listener to each tab button
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.remove('active'));
+                // Show corresponding tab content
+                const target = button.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+    
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+   
+ 
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', function() {
+            const aboutSection = document.querySelector('.flex.flex-col.lg:flex-row.items-center.justify-center.lg:justify-start.mt-8.text-white');
+            const distanceToTop = aboutSection.getBoundingClientRect().top;
+            
+            if (distanceToTop <= 300) { // Change 300 to any value you prefer
+                aboutSection.classList.add('animate');
+            } else {
+                aboutSection.classList.remove('animate');
+            }
+        });
+    </script>
+
+<script>
+function showTab(tabIndex) {
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => tab.classList.remove('bg-blue-500'));
+    tabContents.forEach(content => content.classList.add('hidden'));
+
+    tabs[tabIndex].classList.add('bg-blue-500');
+    tabContents[tabIndex].classList.remove('hidden');
+}
+</script>
+
+
+<!-- script for mobile view of navigation -->
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+</body>
+</html>

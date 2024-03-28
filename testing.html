@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Template with Tabs</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+        <!-- Tabs -->
+        <div class="flex mb-4">
+            <button class="tab-btn active" data-target="tab1">Tab 1</button>
+            <button class="tab-btn" data-target="tab2">Tab 2</button>
+            <button class="tab-btn" data-target="tab3">Tab 3</button>
+        </div>
+        <!-- Tab Content -->
+        <div class="tab-content active" id="tab1">
+            <h2 class="text-2xl font-bold mb-4">Tab 1 Content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros libero. Donec ac viverra lacus, at blandit orci.</p>
+        </div>
+        <div class="tab-content" id="tab2">
+            <h2 class="text-2xl font-bold mb-4">Tab 2 Content</h2>
+            <p>Integer euismod sagittis ipsum, vel luctus sapien ultrices id. Aliquam tincidunt libero vitae dui tempor, nec aliquet odio vulputate.</p>
+        </div>
+        <div class="tab-content" id="tab3">
+            <h2 class="text-2xl font-bold mb-4">Tab 3 Content</h2>
+            <p>Curabitur vitae varius mauris. Vestibulum sed sem euismod, faucibus libero et, varius urna. Donec ac quam ut nisi posuere rhoncus.</p>
+        </div>
+    </div>
+
+    <script>
+        // Get all tab buttons
+        const tabButtons = document.querySelectorAll('.tab-btn');
+
+        // Get all tab contents
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        // Add event listener to each tab button
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.remove('active'));
+                // Show corresponding tab content
+                const target = button.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
