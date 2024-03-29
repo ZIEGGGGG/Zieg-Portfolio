@@ -18,39 +18,40 @@
     <title>ZIEG PORTFOLIO</title>
     <!-- Navogation Bar section -->
     <nav class="font-bold text-center">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <a href="https://www.linkedin.com/in/zieg-fred-jepollo-1026081b8/">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <a href="https://www.linkedin.com/in/zieg-fred-jepollo-1026081b8/">
             <div class="ml-4">
                 <img src="image/logo1.png" alt="" class="h-20 w-20 text-white text-lg lg:text-xl font-semibold">
             </div>
         </a>
-            <ul class="hidden sm:flex space-x-7">
-                <li><a href="index.html" class="text-red-500 hover:text-red-600">Home</a></li>
-                <li><a href="index.html#about" class="text-white hover:text-red-600">About</a></li>
-                <li><a href="#" class="text-white hover:text-red-600">Services</a></li>
-                <li><a href="#" class="text-white hover:text-red-600">Portfolio</a></li>
-                <li><a href="#" class="text-white hover:text-red-600">Contact</a></li>
-            </ul>
-            <!-- Mobile menu button -->
-            <button id="mobile-menu-button" class="sm:hidden text-white hover:text-red-600 focus:outline-none">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden sm:hidden">
-            <ul class="px-2 pt-2 pb-3 space-y-1">
-                <li><a href="#" class="block text-white hover:text-red-600">Home</a></li>
-                <li><a href="#" class="block text-white hover:text-red-600">About</a></li>
-                <li><a href="#" class="block text-white hover:text-red-600">Services</a></li>
-                <li><a href="#" class="block text-white hover:text-red-600">Portfolio</a></li>
-                <li><a href="#" class="block text-white hover:text-red-600">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</head>
+        <ul class="hidden sm:flex space-x-7">
+            <li><a href="index.html" class="text-red-500 hover:text-red-600 transition duration-300 ease-in-out">Home</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-red-600 transition duration-300 ease-in-out">About</a></li>
+            <li><a href="index.html#myservices" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Services</a></li>
+            <li><a href="index.html#mywork" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Portfolio</a></li>
+            <li><a href="index.html#contactme" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="sm:hidden text-white hover:text-red-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden sm:hidden">
+        <ul class="px-2 pt-2 pb-3 space-y-1">
+            <li><a href="index.html" class="text-red-500 hover:text-red-600 transition duration-300 ease-in-out">Home</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-red-600 transition duration-300 ease-in-out">About</a></li>
+            <li><a href="index.html#myservices" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Services</a></li>
+            <li><a href="index.html#mywork" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Portfolio</a></li>
+            <li><a href="index.html#contactme" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+    
 <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
 <body class="bg-black">
    
@@ -75,6 +76,10 @@
     </div>
     </header>
 
+    <div class="bg-primary  rounded-tl-xl border-2 border-solid border-white border-t-0 border-l-0 border-r-0">
+
+            </div>
+    
     <section id="about">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-start mt-8 text-white" data-aos="fade-up">
         <!-- Left container for About Me content and Tabs -->
@@ -89,7 +94,7 @@
             
             <!-- Tabs -->
             <div class="flex flex-wrap font-bold mb-4 mx-11 lg:mb-8 gap-4"> <!-- Responsive margin for the tabs -->
-                <button class="tab-btn  active" data-target="tab1">SKILLS</button>
+                <button class="hover:text-red-600 tab-btn  active" data-target="tab1">SKILLS</button>
                 <button class="tab-btn" data-target="tab2">EXPERIENCE</button>
                 <button class="tab-btn" data-target="tab3">EDUCATION</button>
             </div>
@@ -103,16 +108,17 @@
                 <p class="text-red-600 font-bold">GRAPHICS DESIGN</p>
                 <p class="text-white">T SHIRT DESIGNIN,LOGO DESIGNING ,DIGITAL PORTRAIT</p>
             </div>
-            <div class="tab-content" id="tab2">
-                <p>Integer euismod sagittis ipsum, vel luctus sapien ultrices id. Aliquam tincidunt libero vitae dui tempor, nec aliquet odio vulputate.</p>
+            <div class="mx-11 tab-content" id="tab2">
+                <p>
+                    As a beginner web developer starting in 2024, I'm embarking on a journey to learn the fundamental building blocks of web development, including HTML, CSS, and JavaScript. With a passion for coding and problem-solving, I aim to create visually appealing and functional websites, laying the groundwork for a promising career in the ever-evolving field of web development.</p>
             </div>
             <div class="tab-content" id="tab3">
-                <p>Curabitur vitae varius mauris. Vestibulum sed sem euismod, faucibus libero et, varius urna. Donec ac quam ut nisi posuere rhoncus.</p>
+                <p class="mx-11">Present: BSIT 4th year student.</p>
             </div>
         </div>
     
         <!-- Right container for image -->
-        <div class="w-full lg:w-1/4 mt-6 lg:mt-0 lg:max-w-md xl:max-w-lg shadow-white" data-aos="fade-left"> <!-- Adjust width classes -->
+        <div class=" w-full lg:w-1/4 mt-6 lg:mt-0 lg:max-w-md xl:max-w-lg shadow-white" data-aos="fade-left"> <!-- Adjust width classes -->
             <img class="w-full h-auto object-cover rounded-lg" src="image/aboutme.jpg" alt="About Me Image">
         </div> 
     </div>
@@ -191,5 +197,121 @@ function showTab(tabIndex) {
         }
     });
 </script>
+
+
+
+<!-- MY services section -->
+<section id="myservices">
+    <div class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-left mb-8 text-white mx-11">My Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-11">
+            <!-- Service Container 1 -->
+            <div class="text-white relative overflow-hidden bg-gray-800 rounded-lg shadow-lg" data-aos="fade-up">
+                <img src="image/web_icon.png" class="w-20 h-20 ml-6 mt-4">
+                <div class="ml-6 mt-4 pb-8"> <!-- Adjust left padding to accommodate icon -->
+                    <h3 class="text-xl font-bold mb-2">WEB DESIGN</h3>
+                    <p>Crafting visually stunning websites tailored to your brand. We blend creativity with functionality to deliver engaging digital experiences that captivate your audience.</p>
+                </div>
+            </div>
+            <!-- Service Container 2 -->
+            <div class="text-white relative overflow-hidden bg-red-900 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <img src="image/ux_icon.png" alt="Service 2" class="w-20 h-20 ml-6 mt-4">
+                <div class="ml-6 mt-4 pb-8"> <!-- Adjust left padding to accommodate icon -->
+                    <h3 class="text-xl font-bold mb-2">UX/UI DESIGN</h3>
+                    <p>Creating intuitive and visually appealing user interfaces to enhance user experience. We combine design expertise with user-centric principles for seamless digital interactions that drive engagement.</p>
+                </div>
+            </div>
+            <!-- Service Container 3 -->
+            <div class="text-white relative overflow-hidden bg-red-600 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <img src="image/graphic_icon.png" alt="Service 3" class="w-20 h-20 ml-6 mt-4">
+                <div class="ml-6 mt-4 pb-8"> <!-- Adjust left padding to accommodate icon -->
+                    <h3 class="text-xl font-bold mb-2">GRAPHIC DESIGN</h3>
+                    <p>Transforming concepts into captivating visuals. Our graphic design services craft eye-catching designs that elevate brands, communicate messages effectively, and leave a lasting impression.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My Work section-->
+<section id="mywork" class="relative overflow-hidden">
+    <div class="container mx-auto py-12">
+        <h2 class="text-3xl font-bold text-left mb-8 text-white mx-11">My Work</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <!-- Work Container 1 -->
+            <div class="relative mx-11">
+                <img src="image/work1.png" alt="Work 1" class="w-full rounded-lg transform transition-transform duration-500 hover:translate-y-2">
+                <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 hover:opacity-80 flex flex-col justify-center items-center">
+                    <h3 class="text-red-600 text-lg font-bold mb-2">ERD OF SYSTEM</h3>
+                    <p class="text-white text-sm mb-4">Brief description of the project goes here.</p>
+                    <a href="#" class="bg-white text-black py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">View Details</a>
+                </div>
+            </div>
+            <!-- Work Container 2 -->
+            <div class="relative mx-11">
+                <img src="image/work2.png" alt="Work 2" class="w-full rounded-lg transform transition-transform duration-500 hover:translate-y-2">
+                <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 hover:opacity-80 flex flex-col justify-center items-center">
+                    <h3 class="text-red-600 text-lg font-bold mb-2">ANAFARA WEBSITE</h3>
+                    <p class="text-white text-sm mb-4">During my internship, I was tasked with creating a website for Anafara, an online shopping platform.</p>
+                    <a href="#" class="bg-white text-black py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">View Details</a>
+                </div>
+            </div>
+            <!-- Work Container 3 -->
+            <div class="relative mx-11">
+                <img src="image/work3.png" alt="Work 3" class="w-full rounded-lg transform transition-transform duration-500 hover:translate-y-2">
+                <div class="absolute top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 hover:opacity-80 flex flex-col justify-center items-center">
+                    <h3 class="text-red-600 text-lg font-bold mb-2">UNIFY INTERNSIP PROGRAM</h3>
+                    <p class="text-white text-sm mb-4">Brief description of the project goes here.</p>
+                    <a href="#" class="bg-white text-black py-2 px-4 rounded-full hover:bg-gray-300 transition-colors duration-300">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- contact section -->
+<section id="contactme" class="relative overflow-hidden">
+    <div class="container mx-auto py-16">
+        <div class="flex flex-col lg:flex-row justify-center items-center mx-11">
+            <!-- Left Container for Social Media and CV Button -->
+            <div class="lg:w-3/5 lg:pr-8 mb-8 lg:mb-0 p-8 transform transition-transform duration-500 hover:-translate-y-2">
+                <h2 class="text-4xl font-bold mb-10 text-white text-center">Contact Me</h2>
+                <p class="text-white text-center mb-8">Email: Ziegart2019@gmail.com</p>
+                <p class="text-white text-center mb-10">Phone:+639302965928</p>
+                <div class="flex items-center justify-center mb-14 ml-8">
+                    <!-- Social Media Icons -->
+                    <a href="https://web.facebook.com/profile.php?id=100077266543446" class="mr-8">
+                        <img src="image/fb_icon.png" alt="Facebook" class="w-12 h-12">
+                    </a>
+                    <a href="https://www.instagram.com/lodz_zieg/" class="mr-8">
+                        <img src="image/ig_icon.png" alt="Twitter" class="w-12 h-12">
+                    </a>
+                    <a href="https://www.linkedin.com/in/zieg-fred-jepollo-1026081b8/" class="mr-8">
+                        <img src="image/linkin_icon.png" alt="LinkedIn" class="w-12 h-12">
+                    </a>
+                </div>
+                <div class="text-center">
+                    <a href="https://drive.google.com/file/d/1po7f5yjVgCu1bbkaJ3EQRXiy144-CbQO/view?usp=sharing" download class="bg-red-500 text-white px-10 py-5 rounded-full hover:bg-red-600 transition-colors duration-300">
+                        Download CV
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Container for Contact Form -->
+            <div class="lg:w-1/2 lg:pl-8 mx-11 transform transition-transform duration-500 hover:translate-y-2">
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col">
+                    <input type="hidden" name="access_key" value="7797a827-bf85-4e47-9e8f-f2de98f9ff38">
+                    <input type="text" name="name" class="border-b border-gray-400 py-2 px-4 mb-4" placeholder="Your Name" required> 
+                    <input type="email" name="email" class="border-b border-gray-400 py-2 px-4 mb-4" placeholder="Your Email" required>
+                    <textarea rows="4" name="message" placeholder="Your Message" class="border border-gray-400 py-2 px-4 mb-4" required></textarea>
+                    <button type="submit" class="mt-7 bg-red-500 text-white px-10 py-5 rounded-full hover:bg-red-600 transition-colors duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </body>
 </html>
