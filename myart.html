@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<!-- Navogation Bar section -->
+<nav class="font-bold text-center">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <a href="https://www.linkedin.com/in/zieg-fred-jepollo-1026081b8/">
+            <div class="ml-4">
+                <img src="image/logo1.png" alt="" class="h-20 w-20 text-white text-lg lg:text-xl font-semibold">
+            </div>
+        </a>
+        <ul class="hidden sm:flex space-x-7">
+            <li><a href="index.html" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Home</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-red-600 transition duration-300 ease-in-out">About</a></li>
+            <li><a href="index.html#myservices" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Services</a></li>
+            <li><a href="index.html#mywork" class="text-red-500 hover:text-red-600 transition duration-300 ease-in-out">Portfolio</a></li>
+            <li><a href="index.html#contactme" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-button" class="sm:hidden text-white hover:text-red-600 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden sm:hidden">
+        <ul class="px-2 pt-2 pb-3 space-y-1">
+            <li><a href="index.html" class="text-red-500 hover:text-red-600 transition duration-300 ease-in-out">Home</a></li>
+            <li><a href="index.html#about" class="text-white hover:text-red-600 transition duration-300 ease-in-out">About</a></li>
+            <li><a href="index.html#myservices" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Services</a></li>
+            <li><a href="index.html#mywork" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Portfolio</a></li>
+            <li><a href="index.html#contactme" class="text-white hover:text-red-600 transition duration-300 ease-in-out">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<body class="bg-black">
+    <div class=" mx-auto py-8">
+        <h1 class="text-white text-3xl font-bold text-center mb-8">My Art Gallery</h1>
+        <div class="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-11">
+            <!-- Artwork Card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art1.png" alt="Artwork" class="w-auto h-auto   object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 1</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div><div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art2.png" alt="Artwork" class="w-auto h-auto  object-cover ">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 2</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art3.png" alt="Artwork" class="w-auto h-auto  object-cover ">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 3</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art4.png" alt="Artwork" class="w-auto h-auto   object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 4</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art5.png" alt="Artwork" class="w-auto h-auto   object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 5</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art6.png" alt="Artwork" class="w-auto h-auto   object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 6</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art7.png" alt="Artwork" class="w-auto h-auto  object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 7</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md custom-shadow transition transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-200">
+                <img src="myart/art8.png" alt="Artwork" class="w-auto h-auto object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-bold mb-2 text-red-600">Commission 8</h2>
+                    <p class="text-gray-700 font-bold">Artist: Zieg Fred Jepollo</p>
+                    <p class="">Created using graphite and charcoal powder on vellum board paper.</p>
+                </div>
+            </div>
+            
+            
+            
+            
+            <!-- Repeat this card for more artworks -->
+        </div>
+    </div>
+    <!-- script for mobile view of navigation -->
+<script>
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+</body>
+</html>
